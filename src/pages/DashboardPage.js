@@ -1,5 +1,9 @@
 import React from "react";
 import adminLayout from "../hoc/adminLayout"
+import Chart from "../../src/components/charts/Chart";
+import Widget from "../../src/components/widget/Widget";
+
+import Featured from "../../src/components/featured/Featured"
 
 class DashboardPage extends React.Component {
     constructor(props){
@@ -11,10 +15,19 @@ class DashboardPage extends React.Component {
     render(){
         return <>
 
+
+{/*<div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+    </div>*/}
+
+
         <h1>Guest Analytics</h1>
             <div className="row">
         <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-primary o-hidden h-100">
+          <div className="card text-white bg-success o-hidden h-80">
             <div className="card-body">
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-comments"></i>
@@ -31,7 +44,7 @@ class DashboardPage extends React.Component {
           </div>
         </div>
         <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-warning o-hidden h-100">
+          <div className="card text-white bg-danger o-hidden h-100">
             <div className="card-body">
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-list"></i>
@@ -84,7 +97,7 @@ class DashboardPage extends React.Component {
         </div>
 
         <div className="col-xl-3 col-sm-6 mb-3">
-          <div className="card text-white bg-success o-hidden h-100">
+          <div className="card text-white bg-warning o-hidden h-100">
             <div className="card-body">
               <div className="card-body-icon">
                 <i className="fa fa-fw fa-shopping-cart"></i>
@@ -158,6 +171,10 @@ class DashboardPage extends React.Component {
           </div>
         </div>
 
+        <div className="charts">
+          <Chart title="Guest Analytics (Revenue)" aspect={4 / 1} />
+        </div>
+<p></p>
 
         <h2>Occupancy Analytics</h2>
         <div className="col-xl-3 col-sm-6 mb-3">
@@ -238,6 +255,12 @@ class DashboardPage extends React.Component {
         </div>
 
 
+        <div className="charts">
+          <Chart title="Occupancy Analytics (Revenue)" aspect={6 / 1} />
+        </div>
+
+<p></p>
+
         <h2>Room Analytics</h2>
         <div className="col-xl-3 col-sm-6 mb-3">
           <div className="card text-white bg-warning o-hidden h-100">
@@ -316,6 +339,16 @@ class DashboardPage extends React.Component {
         </div>
       </div>
 
+
+      <div className="charts">
+          <Featured />
+          <Chart title="Last 6 Months (Revenue)" aspect={9 / 4} />
+          <p>     </p>
+        </div>
+      
+
+
+        
 
         </>
     }  

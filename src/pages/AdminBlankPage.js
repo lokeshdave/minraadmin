@@ -1,5 +1,8 @@
 import React from "react";
-import adminLayout from "../hoc/adminLayout"
+import Table from "../../src/components/table/Table";
+import adminLayout from "../hoc/adminLayout";
+import Datatable from "../../src/components/datatable/Datatable"
+
 
 class AdminBlankPage extends React.Component {
     constructor(props){
@@ -10,8 +13,20 @@ class AdminBlankPage extends React.Component {
 
     render(){
         return <>
-            <p>Content here..</p>
-        </>
+            <p>Room Services Available</p>
+            <div className="listContainer">
+          <div className="listTitle">Latest Transactions</div>
+          <Table />
+        </div>
+      
+    {/*<div className="list">
+      <div className="listContainer">
+        <Datatable/>
+      </div>
+    </div>
+    <p></p>*/}
+
+       </>
     }
 }
 
