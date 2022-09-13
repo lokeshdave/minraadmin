@@ -27,7 +27,7 @@ class Sidebar extends React.Component {
                     
 
                     <li className="mb-1">
-                        <Link tag="a" className="" to="/blank-page">
+                        <Link tag="a" className="" to="/service">
                             <i className="fa fa-file-o"></i> Service
                         </Link>
                     </li>
@@ -40,11 +40,11 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Employees</a></li>
-                            <li><a href="#" className="rounded">Guests</a></li>
-                            <li><a href="#" className="rounded">Announcements</a></li>
-                            <li><a href="#" className="rounded">Events</a></li>
-                            <li><a href="#" className="rounded">Check-In</a></li>
+                            <li><Link to={'/employe'} className="rounded">Employees</Link></li>
+                            <li><Link to={'/guests'} className="rounded">Guests</Link></li>
+                            <li><Link to={'/announcement'} className="rounded">Announcements</Link></li>
+                            <li><Link to={"/events"} className="rounded">Events</Link></li>
+                            <li><Link to={"/check-in"} className="rounded">Check-In</Link></li>
                         </ul>
                         </div>
                     </li> 
@@ -55,13 +55,15 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse1">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Room</a></li>
-                            <li><a href="#" className="rounded">Bookings</a></li>
-                            <li><a href="#" className="rounded">Lost And Founds</a></li>
-                            <li><a href="#" className="rounded">Roomservices</a></li>
-                            <li><a href="#" className="rounded">Arrivals</a></li>
-                            <li><a href="#" className="rounded">Departures</a></li>
-                            <li><a href="#" className="rounded">In House Guest</a></li>
+                            <li><Link to={"/room"} className="rounded">Room</Link></li>
+                            <li><Link to={"/bookings"} className="rounded">Bookings</Link></li>
+                            <li><Link to={"/lost_and_founds"} className="rounded">Lost And Founds</Link></li>
+                            <li><Link to={"/roomservices"} className="rounded">Roomservices</Link></li>
+                            <li><Link to={"/arrivals"} className="rounded">Arrivals</Link></li>
+                            <li><Link to={"/departures"} className="rounded">Departures</Link></li>
+                            <li><Link to={"/in_house_guest"} className="rounded">In House Guest</Link></li>
+                            <li>
+                                <Link to="/rates" className="rounded">Rates</Link></li>
                         </ul>
                         </div>
                     </li> 
@@ -73,9 +75,9 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse2">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Food</a></li>
-                            <li><a href="#" className="rounded">Gym</a></li>
-                            <li><a href="#" className="rounded">Sports</a></li>
+                            <li><Link to={"/food"} className="rounded">Food</Link></li>
+                            <li><Link to={"/gym"} className="rounded">Gym</Link></li>
+                            <li><Link to={"/sports"} className="rounded">Sports</Link></li>
                              </ul>
                         </div>
                     </li> 
@@ -87,9 +89,7 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse3">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Make Reservation</a></li>
-                            <li><a href="#" className="rounded">Gym</a></li>
-                            <li><a href="#" className="rounded">Sports</a></li>
+                            <li><Link to={"/make_reservation"} className="rounded">Make Reservation</Link></li>
                              </ul>
                         </div>
                     </li> 
@@ -101,16 +101,16 @@ class Sidebar extends React.Component {
                         </button>
                         <div className="collapse" id="dashboard-collapse4">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" className="rounded">Refunds</a></li>
-                            <li><a href="#" className="rounded">Audit</a></li>
-                            <li><a href="#" className="rounded">Fund Management</a></li>
+                            <li><Link to={"/refund"} className="rounded">Refunds</Link></li>
+                            <li><Link to={"/audit"} className="rounded">Audit</Link></li>
+                            <li><Link to={"/fund_management"} className="rounded">Fund Management</Link></li>
                              </ul>
                         </div>
                     </li> 
                 </ul>
             </PerfectScrollbar>
             <div className="dropdown fixed-bottom-dropdown">
-                <a href="#" className="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="/" className="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://via.placeholder.com/50" alt="" width="32" height="32" className="rounded-circle me-2" />
                     <span>Admin</span>
                 </a>

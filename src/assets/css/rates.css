@@ -1,0 +1,79 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+.ratein{
+    border:none;
+    border-bottom: 1px solid #1890ff;
+    background: transparent;
+}
+.ratein:focus{
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #1890ff;
+    background: transparent;
+}
+input[type=number].ratein::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+ margin: 0; 
+}
+
+.circle{
+    border:1px solid #000;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    position:relative;
+    margin:4px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .circle.plus:before,
+  .circle.plus:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:green;
+  }
+  .circle.plus:before{
+      width: 2px;
+      margin: 2px auto;
+  }
+  .circle.plus:after{
+      margin: auto 2px;
+      height: 2px;
+  }
+  .add{
+  background: transparent;
+  border:none;
+  }
+   .ss2{
+    
+    width: 160%;
+  }
+  .table_na{
+    width: 20px !important;
+  }
+  .d{
+    max-width:160% !important;
+    width: 160% !important;
+    display: inline-block;
+  }
+.img{
+    height: 20px;
+    margin-left: 20px;
+    width: 20px;
+}
+  /*
+  .ss2::before{
+    position: fixed;
+    width: 160%;
+  }
+
+  .ss2::after{
+    position: fixed;
+    width: 160%;
+  } */

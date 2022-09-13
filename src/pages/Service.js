@@ -4,7 +4,7 @@ import adminLayout from "../hoc/adminLayout";
 import Datatable from "../../src/components/datatable/Datatable"
 
 
-class AdminBlankPage extends React.Component {
+class Service extends React.Component {
     constructor(props){
         super(props);
 
@@ -19,15 +19,15 @@ class AdminBlankPage extends React.Component {
           <Table />
         </div>
       
-    {/*<div className="list">
+    <div className="list">
       <div className="listContainer">
         <Datatable/>
       </div>
     </div>
-    <p></p>*/}
+    <p></p>
 
        </>
     }
 }
 
-export default adminLayout(AdminBlankPage);
+export default adminLayout(Service);
