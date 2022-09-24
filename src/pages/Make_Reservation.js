@@ -12,6 +12,7 @@ import Table from 'react-bootstrap/Table';
 
 
 
+
 class Make_Reservation extends Component {
     constructor(props){
         super(props);
@@ -20,7 +21,9 @@ class Make_Reservation extends Component {
     }
     render() {
     return (
+
       <div>
+
       
 <h3 className="head">Make Reservation{this.state.hj} </h3>
 <p className="desc">about this page</p>
