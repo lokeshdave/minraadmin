@@ -7,10 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Pagination from 'react-bootstrap/Pagination';
-import Table from 'react-bootstrap/Table';
-​
-​
-​
+import Table from 'react-bootstrap/Table'
 ​
 class Make_Reservation extends Component {
   constructor(props) {
