@@ -865,3 +865,4 @@ class Make_Reservation extends Component {
 }
 ​
 export default adminLayout(Make_Reservation);
+
